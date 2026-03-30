@@ -1,0 +1,211 @@
+body.option-b {
+  margin: 0;
+  font-family: "Manrope", "Avenir Next", sans-serif;
+  color: #213230;
+  background:
+    radial-gradient(circle at top left, rgba(169, 196, 175, 0.35), transparent 28%),
+    linear-gradient(180deg, #f7f1e8 0%, #f5f0e6 46%, #eef1e8 100%);
+}
+
+.option-b h1,
+.option-b h2,
+.option-b h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  margin: 0 0 0.75rem;
+}
+
+.b-shell {
+  width: min(calc(100% - 2rem), 1180px);
+  margin: 0 auto;
+}
+
+.b-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+}
+
+.b-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.b-nav {
+  display: flex;
+  gap: 1.2rem;
+  color: #5f6d67;
+}
+
+.b-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0 2rem;
+}
+
+.b-hero::before,
+.b-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto;
+  border-radius: 999px;
+  filter: blur(2px);
+}
+
+.b-hero::before {
+  width: 420px;
+  height: 420px;
+  right: -40px;
+  top: 50px;
+  background: radial-gradient(circle, rgba(170, 193, 173, 0.38), rgba(170, 193, 173, 0));
+}
+
+.b-hero::after {
+  width: 360px;
+  height: 360px;
+  left: -60px;
+  bottom: -40px;
+  background: radial-gradient(circle, rgba(192, 139, 108, 0.22), rgba(192, 139, 108, 0));
+}
+
+.b-hero-grid,
+.b-two-col,
+.b-about-grid,
+.b-services {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.b-hero-grid {
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+  align-items: center;
+}
+
+.b-panel,
+.b-card,
+.b-photo-card,
+.b-quote {
+  border-radius: 32px;
+  background: rgba(255, 252, 247, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 28px 60px rgba(39, 52, 46, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.b-panel {
+  padding: 3rem;
+}
+
+.b-panel h1 {
+  font-size: clamp(3.4rem, 8vw, 6rem);
+  line-height: 0.92;
+}
+
+.b-panel p,
+.b-card p,
+.b-quote p,
+.b-photo-copy p {
+  color: #576862;
+  line-height: 1.72;
+}
+
+.b-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #8a5a42;
+}
+
+.b-kicker::before {
+  content: "";
+  width: 38px;
+  height: 1px;
+  background: currentColor;
+}
+
+.b-hero-visual {
+  min-height: 540px;
+  padding: 1.5rem;
+  display: grid;
+  align-items: end;
+  background:
+    linear-gradient(rgba(24, 38, 34, 0.1), rgba(24, 38, 34, 0.28)),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80")
+      center/cover;
+}
+
+.b-hero-visual .b-card {
+  padding: 1.5rem;
+  background: rgba(247, 244, 237, 0.84);
+}
+
+.b-section {
+  padding: 2rem 0 3rem;
+}
+
+.b-two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.b-card,
+.b-quote {
+  padding: 2rem;
+}
+
+.b-services {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.b-photo-card {
+  overflow: hidden;
+}
+
+.b-about-grid {
+  grid-template-columns: minmax(360px, 0.8fr) minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.b-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.b-photo-copy {
+  padding: 2.2rem;
+}
+
+.b-quote blockquote {
+  margin: 0 0 1rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.9rem;
+  line-height: 1.08;
+}
+
+.b-footer {
+  padding: 2rem 0 3rem;
+  color: #5f6d67;
+}
+
+@media (max-width: 960px) {
+  .b-hero-grid,
+  .b-two-col,
+  .b-about-grid,
+  .b-services {
+    grid-template-columns: 1fr;
+  }
+
+  .b-nav {
+    display: none;
+  }
+
+  .b-panel,
+  .b-card,
+  .b-quote,
+  .b-photo-copy {
+    padding: 1.5rem;
+  }
+}

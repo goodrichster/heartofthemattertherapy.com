@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" fill="none">
+  <rect width="720" height="900" rx="40" fill="#EAE3D8"/>
+  <rect x="54" y="54" width="612" height="792" rx="28" fill="#F8F3EC"/>
+  <circle cx="360" cy="298" r="118" fill="#D7C7B7"/>
+  <path d="M241 507C241 439.069 296.069 384 364 384H356C423.931 384 479 439.069 479 507V672H241V507Z" fill="#B99278"/>
+  <path d="M305 273C305 229.922 339.922 195 383 195V195C426.078 195 461 229.922 461 273V332H305V273Z" fill="#8A6A55"/>
+  <path d="M205 749C205 728.013 222.013 711 243 711H477C497.987 711 515 728.013 515 749V750H205V749Z" fill="#D1B9A6"/>
+  <text x="360" y="803" text-anchor="middle" fill="#5A4A3F" font-family="Arial, sans-serif" font-size="28" letter-spacing="3">
+    THERAPIST PHOTO
+  </text>
+</svg>
