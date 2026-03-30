@@ -73,6 +73,23 @@ body.client-options {
   margin-top: 2rem;
 }
 
+.band {
+  margin-top: 2.5rem;
+}
+
+.band-header {
+  max-width: 760px;
+}
+
+.band-header h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+.band-header p {
+  color: var(--studio-muted);
+  line-height: 1.7;
+}
+
 .concept-card,
 .palette-card {
   padding: 2rem;
