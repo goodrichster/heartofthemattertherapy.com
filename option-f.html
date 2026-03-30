@@ -236,14 +236,44 @@
 
     <section class="f-band f-band-sand" id="contact">
       <div class="f-band-inner">
-        <div class="f-copy">
-          <h2>Getting started.</h2>
-          <p>
-            Many people begin with a free 15-minute consultation. This gives us a chance to briefly
-            talk about what you are looking for and see whether working together feels like a good
-            fit.
-          </p>
-          <a class="f-button" href="contact.html">Schedule a consultation</a>
+        <div class="f-schedule-grid">
+          <div class="f-copy">
+            <h2>Schedule a free 15-minute consultation.</h2>
+            <p>
+              This should feel like its own destination on the page, not a small footer CTA. The
+              goal is to make scheduling feel clear, calm, and immediate without breaking the tone
+              of the theme.
+            </p>
+            <p>
+              For the live build, the strongest move is an inline Calendly embed inside a refined
+              frame so people can book without leaving the page. That keeps the momentum high while
+              preserving the site’s spacious, editorial feeling.
+            </p>
+            <ul class="f-list f-contact-list">
+              <li>Free 15-minute consultation</li>
+              <li>Telehealth across Massachusetts</li>
+              <li>Monday through Friday, 10:00 AM to 5:00 PM</li>
+              <li>Best for adults and couples looking for deeper, structural change</li>
+            </ul>
+          </div>
+          <div class="f-calendly-card">
+            <div class="f-calendly-top">
+              <span>Calendly</span>
+              <span>Inline Scheduler</span>
+            </div>
+            <div class="f-calendly-embed">
+              <iframe
+                class="f-calendly-frame"
+                src="https://calendly.com/sam-heartofittherapy?hide_gdpr_banner=1"
+                title="Schedule a consultation with Sam"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="f-calendly-note">
+              Inline embed using Calendly keeps booking on-page and preserves the more immersive,
+              editorial feel of this concept.
+            </p>
+          </div>
         </div>
       </div>
     </section>

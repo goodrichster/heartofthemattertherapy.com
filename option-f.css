@@ -224,6 +224,64 @@ body.option-f {
   gap: 1.5rem;
 }
 
+.f-schedule-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(360px, 1.15fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.f-contact-list {
+  margin-top: 1.5rem;
+}
+
+.f-calendly-card {
+  padding: 1.2rem;
+  border-radius: 36px;
+  background: rgba(255, 250, 244, 0.72);
+  box-shadow: 0 24px 54px rgba(43, 58, 54, 0.08);
+}
+
+.f-calendly-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.4rem 0.35rem 1rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7b6d61;
+}
+
+.f-calendly-embed {
+  min-height: 640px;
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(252, 247, 241, 0.96));
+  border: 1px solid rgba(43, 58, 54, 0.08);
+}
+
+.f-calendly-frame {
+  display: block;
+  width: 100%;
+  min-height: 640px;
+  border: 0;
+  background: transparent;
+}
+
+.f-calendly-note {
+  max-width: 42ch;
+  margin: 0.75rem auto 0;
+  color: #5f7069;
+  line-height: 1.8;
+}
+
+.f-calendly-note {
+  font-size: 0.95rem;
+  padding: 1rem 0 0.2rem;
+}
+
 .f-faq-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -276,7 +334,8 @@ body.option-f {
   .f-split-band .f-band-inner,
   .f-about-grid,
   .f-quote-grid,
-  .f-faq-grid {
+  .f-faq-grid,
+  .f-schedule-grid {
     grid-template-columns: 1fr;
   }
 
