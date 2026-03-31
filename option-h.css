@@ -5,6 +5,10 @@ body.option-h {
   background: #f6f1ea;
 }
 
+[id] {
+  scroll-margin-top: 110px;
+}
+
 .option-h h1,
 .option-h h2,
 .option-h h3 {
