@@ -151,8 +151,7 @@ body.option-f {
   align-items: end;
   background:
     linear-gradient(180deg, rgba(43, 58, 54, 0.04), rgba(43, 58, 54, 0.26)),
-    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80")
-      center/cover;
+    url("photo-28.jpg") center 38% / cover;
 }
 
 .f-image-caption {
@@ -222,6 +221,7 @@ body.option-f {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 14%;
   display: block;
 }
 
