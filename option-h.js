@@ -16,3 +16,27 @@ if (hNavToggle && hNav) {
     });
   });
 }
+
+document.querySelectorAll("[data-faq]").forEach((item) => {
+  const button = item.querySelector(".faq-question");
+  const answer = item.querySelector(".faq-answer");
+
+  if (!button || !answer) {
+    return;
+  }
+
+  button.addEventListener("click", () => {
+    const expanded = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!expanded));
+    answer.style.maxHeight = expanded ? "0px" : `${answer.scrollHeight}px`;
+    button.querySelector("span:last-child").textContent = expanded ? "+" : "−";
+  });
+});
+
+document
+  .querySelectorAll(".f-contact-form, .h-contact-form, .j-contact-form")
+  .forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+    });
+  });

@@ -504,6 +504,36 @@ body.h-menu-open {
   box-shadow: 0 24px 54px rgba(43, 58, 54, 0.08);
 }
 
+.h-contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.h-contact-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2b3a36;
+}
+
+.h-contact-form input,
+.h-contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(43, 58, 54, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  font: inherit;
+  color: #2b3a36;
+}
+
+.h-contact-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
 .h-calendly-top {
   display: flex;
   justify-content: space-between;
@@ -513,22 +543,6 @@ body.h-menu-open {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #7b6d61;
-}
-
-.h-calendly-embed {
-  min-height: 640px;
-  border-radius: 28px;
-  overflow: hidden;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(252, 247, 241, 0.96));
-  border: 1px solid rgba(43, 58, 54, 0.08);
-}
-
-.h-calendly-frame {
-  display: block;
-  width: 100%;
-  min-height: 640px;
-  border: 0;
-  background: transparent;
 }
 
 .h-footer {

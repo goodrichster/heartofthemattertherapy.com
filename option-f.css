@@ -249,6 +249,36 @@ body.option-f {
   box-shadow: 0 24px 54px rgba(43, 58, 54, 0.08);
 }
 
+.f-contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.f-contact-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2b3a36;
+}
+
+.f-contact-form input,
+.f-contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(43, 58, 54, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  font: inherit;
+  color: #2b3a36;
+}
+
+.f-contact-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
 .f-calendly-top {
   display: flex;
   justify-content: space-between;
@@ -258,23 +288,6 @@ body.option-f {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #7b6d61;
-}
-
-.f-calendly-embed {
-  min-height: 640px;
-  border-radius: 28px;
-  overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(252, 247, 241, 0.96));
-  border: 1px solid rgba(43, 58, 54, 0.08);
-}
-
-.f-calendly-frame {
-  display: block;
-  width: 100%;
-  min-height: 640px;
-  border: 0;
-  background: transparent;
 }
 
 .f-calendly-note {
@@ -289,23 +302,51 @@ body.option-f {
   padding: 1rem 0 0.2rem;
 }
 
-.f-faq-grid {
+.faq-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 
-.f-faq-item {
-  padding: 1.6rem 0;
-  border-top: 1px solid rgba(43, 58, 54, 0.14);
+.faq-item {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 32px;
+  background: rgba(255, 251, 246, 0.82);
+  box-shadow: 0 22px 48px rgba(43, 58, 54, 0.08);
 }
 
-.f-faq-item h3 {
-  font-size: 2rem;
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.4rem 1.6rem;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  color: #2b3a36;
+  cursor: pointer;
 }
 
-.f-faq-item p {
+.faq-question span:last-child {
+  font-size: 1.6rem;
+  color: #8f5239;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 220ms ease;
+}
+
+.faq-answer-inner {
+  padding: 0 1.6rem 1.6rem;
+}
+
+.faq-answer-inner p,
+.faq-answer-inner .mini-note {
   margin: 0;
   color: #5f7069;
   line-height: 1.8;
@@ -341,7 +382,6 @@ body.option-f {
   .f-split-band .f-band-inner,
   .f-about-grid,
   .f-quote-grid,
-  .f-faq-grid,
   .f-schedule-grid {
     grid-template-columns: 1fr;
   }

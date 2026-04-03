@@ -245,7 +245,6 @@ body.h-menu-open {
 .j-copy p,
 .j-split-copy p,
 .j-faq-hero-copy p,
-.j-faq-item p,
 .j-footer p {
   line-height: 1.8;
 }
@@ -311,8 +310,7 @@ body.h-menu-open {
 }
 
 .j-copy p,
-.j-split-copy p,
-.j-faq-item p {
+.j-split-copy p {
   color: #5f7069;
 }
 
@@ -477,82 +475,54 @@ body.h-menu-open {
   color: #5f7069;
 }
 
-.j-faq-hero {
-  padding: 5rem 0 4rem;
-  background:
-    linear-gradient(135deg, rgba(37, 52, 49, 0.96), rgba(67, 88, 81, 0.82)),
-    #2f413d;
-  color: #fffaf3;
+.faq-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.faq-item {
+  padding: 0;
   overflow: hidden;
+  border-radius: 32px;
+  background: rgba(255, 251, 246, 0.82);
+  box-shadow: 0 22px 48px rgba(43, 58, 54, 0.08);
 }
 
-.j-faq-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 78% 24%, rgba(234, 217, 192, 0.24), transparent 28%),
-    radial-gradient(circle at 92% 76%, rgba(223, 232, 221, 0.14), transparent 26%);
-  pointer-events: none;
-}
-
-.j-faq-hero-grid,
-.j-faq-intro {
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+.faq-question {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.4rem 1.6rem;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  color: #2b3a36;
+  cursor: pointer;
 }
 
-.j-faq-hero-copy,
-.j-faq-highlight {
-  position: relative;
-  z-index: 1;
+.faq-question span:last-child {
+  font-size: 1.6rem;
+  color: #8f5239;
 }
 
-.j-eyebrow {
-  margin-bottom: 1rem;
-  color: #d8c5b0;
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 220ms ease;
 }
 
-.j-faq-hero-copy p {
-  max-width: 560px;
-  color: rgba(255, 250, 243, 0.82);
+.faq-answer-inner {
+  padding: 0 1.6rem 1.6rem;
 }
 
-.j-faq-hero-image {
-  min-height: 320px;
-  border-radius: 40px;
-  background:
-    linear-gradient(180deg, rgba(18, 31, 29, 0.16), rgba(18, 31, 29, 0.32)),
-    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1400") center/cover;
-  box-shadow: 0 28px 72px rgba(15, 24, 22, 0.3);
-}
-
-.j-faq-intro {
-  margin-bottom: 3rem;
-}
-
-.j-faq-highlight {
-  padding: 2rem;
-  background: linear-gradient(180deg, rgba(236, 224, 210, 0.72), rgba(255, 251, 246, 0.88));
-}
-
-.j-faq-highlight-label,
-.j-faq-number {
-  color: #8a6f5d;
-}
-
-.j-faq-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem 2.5rem;
-}
-
-.j-faq-item {
-  padding: 1.6rem 1.6rem 1.75rem;
-}
-
-.j-faq-item h3 {
-  font-size: 2rem;
-  margin-bottom: 0.65rem;
+.faq-answer-inner p,
+.faq-answer-inner .mini-note {
+  margin: 0;
+  color: #5f7069;
+  line-height: 1.8;
 }
 
 .j-schedule-grid {
@@ -568,6 +538,36 @@ body.h-menu-open {
   padding: 1.2rem;
 }
 
+.j-contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.j-contact-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2b3a36;
+}
+
+.j-contact-form input,
+.j-contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(43, 58, 54, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  font: inherit;
+  color: #2b3a36;
+}
+
+.j-contact-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
 .j-calendly-top {
   display: flex;
   justify-content: space-between;
@@ -577,22 +577,6 @@ body.h-menu-open {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #7b6d61;
-}
-
-.j-calendly-embed {
-  min-height: 640px;
-  border-radius: 28px;
-  overflow: hidden;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(252, 247, 241, 0.96));
-  border: 1px solid rgba(43, 58, 54, 0.08);
-}
-
-.j-calendly-frame {
-  display: block;
-  width: 100%;
-  min-height: 640px;
-  border: 0;
-  background: transparent;
 }
 
 .j-footer {
@@ -625,9 +609,6 @@ body.h-menu-open {
   .j-page-grid,
   .j-service-grid,
   .j-quote-grid,
-  .j-faq-hero-grid,
-  .j-faq-intro,
-  .j-faq-grid,
   .j-schedule-grid,
   .j-footer-grid {
     grid-template-columns: 1fr;
@@ -683,13 +664,5 @@ body.h-menu-open {
 
   .j-hero {
     min-height: 72vh;
-  }
-
-  .j-faq-hero {
-    padding: 4.5rem 0 3.5rem;
-  }
-
-  .j-faq-hero-image {
-    min-height: 240px;
   }
 }
