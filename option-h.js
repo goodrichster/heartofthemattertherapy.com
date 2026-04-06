@@ -34,7 +34,7 @@ document.querySelectorAll("[data-faq]").forEach((item) => {
 });
 
 document
-  .querySelectorAll(".f-contact-form, .h-contact-form, .j-contact-form")
+  .querySelectorAll(".f-contact-form, .h-contact-form, .j-contact-form, .k-contact-form")
   .forEach((form) => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
