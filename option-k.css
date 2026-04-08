@@ -329,7 +329,8 @@ html {
 .k-page-copy h1,
 .k-page-copy h2 {
   font-size: clamp(2.8rem, 5vw, 4.4rem);
-  line-height: 0.95;
+  line-height: 1.02;
+  letter-spacing: -0.015em;
 }
 
 .k-copy p,
@@ -361,12 +362,12 @@ html {
   margin: 0;
   color: #fdf8f1;
   font-family: "Bodoni Moda", "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2.05rem, 4.2vw, 3.4rem);
-  line-height: 1.02;
-  font-weight: 600;
+  font-size: clamp(1.85rem, 3.7vw, 2.95rem);
+  line-height: 1.05;
+  font-weight: 500;
   font-style: italic;
-  letter-spacing: -0.015em;
-  text-shadow: 0 8px 22px rgba(18, 24, 22, 0.2);
+  letter-spacing: -0.01em;
+  text-shadow: 0 8px 20px rgba(18, 24, 22, 0.18);
 }
 
 .k-list {
@@ -494,6 +495,58 @@ html {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.k-page-grid-offset {
+  align-items: start;
+}
+
+.k-expect-grid {
+  margin-top: 2rem;
+}
+
+.k-capability-list .k-list {
+  gap: 0;
+}
+
+.k-capability-list .k-list li {
+  padding: 1rem 0;
+}
+
+.k-page-card-soft {
+  background: rgba(255, 251, 246, 0.88);
+}
+
+.k-page-card-mist {
+  background: linear-gradient(135deg, rgba(232, 239, 234, 0.9), rgba(248, 251, 247, 0.88));
+  border: 1px solid rgba(95, 112, 105, 0.12);
+}
+
+.k-gold-list {
+  gap: 0.2rem;
+  margin-top: 1.25rem;
+}
+
+.k-gold-list li {
+  position: relative;
+  padding: 0.9rem 0 0.9rem 1.25rem;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.k-gold-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.45rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: #c79a4b;
+}
+
+.k-gold-list li:last-child {
+  border-bottom: 0;
+}
+
 .faq-list {
   display: grid;
   gap: 1rem;
@@ -586,13 +639,6 @@ html {
 
 .k-contact-list {
   margin-top: 1.8rem;
-}
-
-.k-contact-note {
-  margin: 1rem 0 0;
-  color: #6c7a74;
-  font-size: 0.95rem;
-  line-height: 1.7;
 }
 
 .k-contact-top {
@@ -716,6 +762,11 @@ html {
     min-height: 72vh;
   }
 
+  .k-page-copy h1 {
+    font-size: clamp(2.6rem, 8vw, 4rem);
+    line-height: 1.04;
+  }
+
   .k-image-band {
     min-height: clamp(460px, 88vw, 760px);
     background:
@@ -730,10 +781,10 @@ html {
 
   .k-image-caption p {
     max-width: 8ch;
-    font-size: clamp(1.56rem, 5.5vw, 2.15rem);
-    line-height: 1.08;
+    font-size: clamp(1.42rem, 5vw, 1.95rem);
+    line-height: 1.1;
     text-wrap: balance;
-    text-shadow: 0 10px 24px rgba(18, 24, 22, 0.28);
+    text-shadow: 0 10px 22px rgba(18, 24, 22, 0.24);
   }
 }
 
@@ -751,8 +802,8 @@ html {
 
   .k-image-caption p {
     max-width: 8.2ch;
-    font-size: clamp(1.38rem, 6vw, 1.8rem);
-    line-height: 1.12;
-    letter-spacing: -0.02em;
+    font-size: clamp(1.26rem, 5.4vw, 1.6rem);
+    line-height: 1.14;
+    letter-spacing: -0.015em;
   }
 }
