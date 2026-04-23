@@ -446,6 +446,26 @@ html {
   gap: 1.5rem;
 }
 
+.k-testimonial-grid {
+  grid-column: 1 / -1;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: min(100%, 1040px);
+  margin-top: 2.8rem;
+}
+
+.k-testimonial-grid .k-quote {
+  font-size: clamp(1.55rem, 2.2vw, 1.95rem);
+}
+
+.k-testimonial-grid .k-quote:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 880px;
+}
+
 .k-quote,
 .k-service-card,
 .k-page-aside,
@@ -765,6 +785,16 @@ html {
 
   .h-nav-toggle {
     display: inline-block;
+  }
+
+  .k-testimonial-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .k-testimonial-grid .k-quote:last-child {
+    grid-column: auto;
+    max-width: none;
   }
 
   .k-hero {
