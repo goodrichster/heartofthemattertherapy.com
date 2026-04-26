@@ -123,6 +123,15 @@ html {
   margin-bottom: -0.9rem;
 }
 
+.h-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  left: -0.85rem;
+  right: -0.85rem;
+  top: 100%;
+  height: 0.85rem;
+}
+
 .h-nav .nav-trigger {
   display: inline-flex;
   align-items: center;
@@ -141,7 +150,7 @@ html {
 
 .h-nav .nav-dropdown {
   position: absolute;
-  top: calc(100% + 0.2rem);
+  top: calc(100% + 0.02rem);
   left: -1rem;
   min-width: 240px;
   padding: 0.8rem;
@@ -255,11 +264,6 @@ html {
 .k-hero-copy p {
   color: rgba(253, 248, 241, 0.88);
   max-width: 58ch;
-}
-
-.k-hero-lead {
-  font-style: italic;
-  color: rgba(253, 248, 241, 0.96);
 }
 
 .k-actions,
@@ -475,6 +479,43 @@ html {
   border-radius: 32px;
   background: rgba(255, 251, 246, 0.82);
   box-shadow: 0 22px 48px rgba(43, 58, 54, 0.08);
+}
+
+.k-page-aside {
+  position: relative;
+  background: linear-gradient(165deg, rgba(255, 252, 247, 0.96), rgba(241, 233, 222, 0.9));
+  border: 1px solid rgba(143, 82, 57, 0.12);
+  box-shadow: 0 28px 56px rgba(43, 58, 54, 0.1);
+}
+
+.k-page-aside h3 {
+  margin: 0 0 1.2rem;
+  padding-top: 0.45rem;
+  font-size: clamp(1.9rem, 2.2vw, 2.45rem);
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+}
+
+.k-page-aside .k-list {
+  gap: 0.25rem;
+}
+
+.k-page-aside .k-list li {
+  position: relative;
+  padding: 1rem 0 1rem 1.3rem;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.k-page-aside .k-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.45rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: #c79a4b;
 }
 
 .k-quote {
@@ -724,6 +765,16 @@ html {
 .k-footer-links {
   display: grid;
   gap: 0.5rem;
+}
+
+.k-footer-disclaimer {
+  margin: 1.25rem 0 0;
+  max-width: 36rem;
+  font-family: "Manrope", "Avenir Next", sans-serif;
+  font-size: 0.83rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #64746d;
 }
 
 @media (max-width: 960px) {
