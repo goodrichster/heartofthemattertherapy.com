@@ -309,6 +309,11 @@ html {
   font-weight: 700;
 }
 
+.k-text-link-cta {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
 .k-band {
   padding: 5rem 0;
 }
@@ -764,6 +769,20 @@ html {
 
 .k-cta-panel-dark .k-eyebrow {
   color: #d58d63;
+}
+
+.k-cta-panel-soft {
+  background: linear-gradient(145deg, rgba(238, 232, 223, 0.92), rgba(245, 240, 233, 0.96));
+  border: 1px solid rgba(143, 82, 57, 0.1);
+  box-shadow: 0 20px 44px rgba(43, 58, 54, 0.06);
+}
+
+.k-cta-panel-soft .k-eyebrow {
+  color: #9d654a;
+}
+
+.k-cta-panel-soft p {
+  color: #5f7069;
 }
 
 .k-footer {
