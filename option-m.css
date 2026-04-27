@@ -445,6 +445,16 @@ html {
   object-position: center 12%;
 }
 
+.k-contact-photo {
+  margin-top: 1.4rem;
+  max-width: 360px;
+}
+
+.k-contact-photo img {
+  aspect-ratio: 4 / 5;
+  object-position: center 16%;
+}
+
 .k-quote-stack {
   display: grid;
   gap: 1.5rem;
@@ -556,6 +566,17 @@ html {
 .k-contact-grid {
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
   align-items: start;
+}
+
+@media (min-width: 1120px) {
+  .k-contact-grid {
+    grid-template-columns: minmax(0, 0.88fr) minmax(380px, 1.12fr);
+    column-gap: 3rem;
+  }
+
+  .k-contact-photo {
+    max-width: 340px;
+  }
 }
 
 .k-page-grid {
@@ -842,6 +863,10 @@ html {
   .k-testimonial-grid {
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  .k-contact-photo {
+    max-width: 100%;
   }
 
   .k-testimonial-grid .k-quote:last-child {
