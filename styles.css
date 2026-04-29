@@ -359,7 +359,7 @@ html {
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(43, 58, 54, 0.02), rgba(43, 58, 54, 0.24)),
-    url("Sam_Final_web_01/Sam -2.jpg") center 38% / cover;
+    url("images/home-quote.jpg") center 38% / cover;
 }
 
 .k-image-caption {
@@ -930,7 +930,7 @@ html {
     min-height: clamp(460px, 88vw, 760px);
     background:
       linear-gradient(180deg, rgba(27, 37, 35, 0) 0%, rgba(27, 37, 35, 0.14) 42%, rgba(27, 37, 35, 0.64) 100%),
-      url("Sam_Final_web_01/Sam -2.jpg") center 18% / cover;
+      url("images/home-quote.jpg") center 18% / cover;
   }
 
   .k-image-caption {
@@ -960,7 +960,7 @@ html {
     min-height: clamp(420px, 108vw, 620px);
     background:
       linear-gradient(180deg, rgba(27, 37, 35, 0) 0%, rgba(27, 37, 35, 0.22) 48%, rgba(27, 37, 35, 0.76) 100%),
-      url("Sam_Final_web_01/Sam -2.jpg") center 22% / cover;
+      url("images/home-quote.jpg") center 22% / cover;
   }
 
   .k-image-caption {
